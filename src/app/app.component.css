@@ -1,0 +1,137 @@
+header {
+  display: flex;
+  align-items: center;
+  background: rgb(13, 75, 93);
+  color: white;
+  margin: .25rem;
+  border: 3px double white;
+  border-radius: .4rem;
+  padding: .25rem;
+}
+
+header img {
+  width: 90px;
+  height: auto;
+  display: block;
+  margin-right: 1rem;
+}
+
+header h1 {
+  text-align: center;
+  color: black;
+  -webkit-text-stroke: 1px white;
+}
+
+header h1 small {
+  display: block;
+  font-size: 1rem;
+  -webkit-text-stroke: 0;
+  font-weight: normal;
+  color: white;
+  letter-spacing: .05rem;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  background: rgb(32, 32, 32);
+  color: white;
+  margin: .25rem;
+  border: 3px double white;
+  border-radius: .4rem;
+}
+
+nav div {
+  padding: .5rem .7rem;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: .2s;
+}
+
+nav div:hover {
+  color: black;
+  background: white;
+}
+
+nav div:first-child {
+  margin-right: auto;
+}
+
+nav div i {
+  font-size: 1.5rem;
+  margin-bottom: .25rem;
+}
+
+@media (min-width: 640px) {
+  nav div {
+      flex-direction: row;
+  }
+  nav div i {
+      font-size: 1.2rem;
+      margin-bottom: 0;
+      margin-right: .25rem;
+  }
+}
+
+footer {
+  background: black;
+  margin: .25rem;
+  border: 3px double white;
+  border-radius: .4rem;
+  color: white;
+}
+
+footer .top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px dotted grey;
+}
+
+footer .link {
+  padding: .5rem;
+  cursor: pointer;
+}
+
+footer .link:hover {
+  color: black;
+  background: white;
+}
+
+footer .link i {
+  font-size: 1.2rem;
+}
+
+footer .copyr {
+  font-size: .85rem;
+}
+
+footer .botton {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  padding: .5rem 0;
+}
+
+footer .botton div div {
+  padding: .5rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  border-radius: .25rem;
+  transition: .2s;
+}
+
+footer .botton div div:hover {
+  color: black;
+  background: white;
+}
+
+footer .botton div i {
+  font-size: 1.4rem;
+  margin-right: .25rem;
+}
