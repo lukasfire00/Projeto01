@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "projeto01-fc5fb": {
+      "hosting": {
+        "Projeto01": [
+          "projeto01-fc5fb"
+        ]
+      }
+    }
+  }
+}
