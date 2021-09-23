@@ -1,14 +1,15 @@
+<a id="top"></a>
 <div class="wrap">
 
   <header>
-    <img src="assets/logo.png" alt="ProjetoUm">
-    <h1>ProjetoUm<small>Meu primeiro projeto</small></h1>
+    <img routerLink="/home" src="assets/logo.png" alt="Projeto01">
+    <h1>Projeto01<small>Meu primeiro projeto</small></h1>
   </header>
 
   <nav>
-    <div><i class="fas fa-home fa-fw"></i><span>Início</span></div>
-    <div><i class="fas fa-comments fa-fw"></i><span>Contatos</span></div>
-    <div><i class="fas fa-info-circle fa-fw"></i><span>Sobre</span></div>
+    <div routerLink="/home"><i class="fas fa-home fa-fw"></i><span>Início</span></div>
+    <div routerLink="/contacts"><i class="fas fa-comments fa-fw"></i><span>Contatos</span></div>
+    <div routerLink="/about"><i class="fas fa-info-circle fa-fw"></i><span>Sobre</span></div>
   </nav>
 
   <main>
@@ -20,23 +21,23 @@
   <footer>
 
     <div class="top">
-      <div><i class="fas fa-home fa-fw"></i></div>
-      <div>&copy; Copyright 2021 Lucas Teixeira</div>
-      <div><i class="fas fa-arrow-alt-circle-up fa-fw"></i></div>
+      <div routerLink="/home" class='link'><i class="fas fa-home fa-fw"></i></div>
+      <div class='copyr'>&copy; Copyright 2021 Lucas Teixeira</div>
+      <div (click)="goTo('top')" class="link"><i class="fas fa-arrow-alt-circle-up fa-fw"></i></div>
     </div>
 
     <div class="botton">
 
       <div class="left">
-        <div><i class="fab fa-github-square fa-fw"></i><span>GitHub.com</span></div>
-        <div><i class="fab fa-youtube-square fa-fw"></i><span>Youtube</span></div>
-        <div><i class="fab fa-facebook-square fa-fw"></i><span>Facebook</span></div>
+        <div (click)="open('https://github.com/lukasfire00')"><i class="fab fa-github-square fa-fw"></i><span>GitHub.com</span></div>
+        <div  (click)="open('https://youtube.com/lukasfire001')"><i class="fab fa-youtube-square fa-fw"></i><span>Youtube</span></div>
+        <div  (click)="open('https://Facebook.com/Silvalukas')"><i class="fab fa-facebook-square fa-fw"></i><span>Facebook</span></div>
       </div>
 
       <div class="right">
-        <div><i class="fas fa-comments fa-fw"></i><span>Contatos</span></div>
-        <div><i class="fas fa-info-circle fa-fw"></i><span>Sobre</span></div>
-        <div><i class="fas fa-lock fa-fw"></i><span>Privacidade</span></div>
+        <div routerLink="/contacts"><i class="fas fa-comments fa-fw"></i><span>Contatos</span></div>
+        <div routerLink="/about"><i class="fas fa-info-circle fa-fw"></i><span>Sobre</span></div>
+        <div routerLink="/privacity" ><i class="fas fa-lock fa-fw"></i><span>Privacidade</span></div>
       </div>
 
     </div>

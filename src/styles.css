@@ -30,9 +30,26 @@ h1, h2, h3, h4, h5, p {
 /* fundo das páginas */
 body {
   background-color: black;
-  background-image: ;
+  background-image: url('assets/background01.jpg');
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+/* Páginas */
+article {
+  background: white;
+    border: 3px double grey;
+    margin: .25rem;
+    border-radius: .4rem;
+    padding: 0 1rem;
+}
+
+/* Estilos de uso geral */
+p.center {
+text-align: center;
+}
+
+img.fluid {
+  max-width: 100%;
 }
